@@ -1,27 +1,60 @@
 body {
-    background: #fefefe;
+  background: #fefefe;
 }
 
 section {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .main-heading {
-    color: #92140C;
+  color: #92140c;
 }
 
 .secondary-heading {
-    color: #1460AA;
+  color: #1460aa;
 }
 
 .special-heading {
-    color: #21A179;
+  color: #21a179;
 }
 
 a {
-    color: #02e4d5;
+  color: #02e4d5;
 }
 
-.header-link  {
-    color: #04ac26;
-} 
+.header-link {
+  color: #04ac26;
+}
+
+
+.navigation {
+    padding: 16px;
+    background: #03a057;
+}
+
+.navigation__link {
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation__link--homepage {
+    color: rgb(205, 205, 205);
+}
+
+.about {
+    padding: 16px;
+    border: 1px solid #333;
+}
+
+.about__description {
+    color: #333;
+}
+
+.about__heading {
+  color: #1460aa;
+}
+
+.about__photo {
+    border-radius: 50%;
+}
