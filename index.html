@@ -4,61 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="header">
       <nav class="navigation">
-        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
         <a class="navigation__link" href="nauka-css.html">Nauka css</a>
       </nav>
     </header>
 
-    <main>
-      <header id="top">
-        <h1 class="main-heading" id="name">
-          Maciek Korsan - Strona domowa robiona w ramach WTF
+    <main class="main">
+      <header class="main__header" id="top">
+        <h1 class="main__heading main__heading--js" id="name">
+          Maciek Korsan - Strona domowa
         </h1>
       </header>
 
       <section class="about">
         <h2 class="about__heading">Kim jest ten typ?</h2>
-        <img class="about__photo" src="korsan-header.jpg" alt="Uśmiechnięty Korsan" />
+        <img
+          class="about__picture"
+          src="korsan-header.jpg"
+          alt="Uśmiechnięty Korsan"
+        />
         <p class="about__description">
           Hej! Na co dzień uczę wspaniałych ludzi <em>tajnej sztuki</em>
           <i>frontendu</i> i pracuję w firmie o ciężko zapisywalnej nazwie:
-          EYEDEA. Prowadzę szkolenie <a href="https://cotenfrontend.pl">WTF</a
-          ><br />
+          EYEDEA. Prowadzę szkolenie
+          <a class="about__link" href="https://cotenfrontend.pl">WTF</a><br />
           Poza tym bardzo <b>lubię robić zdjęcia i latać dronem</b>. Witam Cię
           na mojej stronie domowej, mam nadzieję, że znajdziesz tu trochę
-          przydatnych rzeczy. <a href="#notatki">Przejdź do notatek</a>
+          przydatnych rzeczy.
+          <a class="about__link" href="#notatki">Przejdź do notatek</a>
         </p>
       </section>
 
-      <section id="notatki">
-        <h2 class="secondary-heading">Notatki z WTF: Co ten frontend</h2>
+      <section class="notes" id="notatki">
+        <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
 
-        <article>
-          <h3 class="special-heading">Odrabianie pracy domowej</h3>
-          <p>Poszło mi całkiem spoko :)</p>
+        <article class="week-summary">
+          <h3 class="week-summary__title week-summary__title--js">
+            Odrabianie pracy domowej
+          </h3>
+          <p class="week-summary__description">Poszło mi całkiem spoko :)</p>
+          <p
+            class="week-summary__description week-summary__description--js"
+          ></p>
         </article>
 
-        <article>
-          <h3 class="special-heading">Jak stworzyć prawidłowego HTML-a?</h3>
-          <p>
+        <article class="week-summary week-summary--special">
+          <h3 class="week-summary__title">Jak stworzyć prawidłowego HTML-a?</h3>
+          <p class="week-summary__description">
             <strong>Tworzenie zgodnego ze standardami HTML-a to sztuka</strong>,
             którą do perfekcji opanowało niewielu. Jeśli chcesz stać się częścią
             tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego
             czasu...
           </p>
+          <section>
+            <h4>Lista fajnych znaczników</h4>
+            <ul class="list">
+              <li class="list__item">UL</li>
+              <li class="list__item">OL</li>
+              <li class="list__item">
+                SECTION
+                <ol>
+                  <li>Przeanalizuj treść</li>
+                  <li>Podziel ją na sekcje</li>
+                  <li>Utwórz pierwszą wersję kodu</li>
+                </ol>
+              </li>
+            </ul>
+            <dl>
+              <dt>div</dt>
+              <dd>Opis mojego diva</dd>
+
+              <dt>article</dt>
+              <dd>Opis mojego artykułu</dd>
+            </dl>
+          </section>
+          <section>
+            <h4>Kroki do zrobienia dobrego HTML-a</h4>
+            <ol>
+              <li>Przeanalizuj treść</li>
+              <li>Podziel ją na sekcje</li>
+              <li>Utwórz pierwszą wersję kodu</li>
+            </ol>
+          </section>
+          <section>
+            <h4>Rozpiska WTF</h4>
+            <table class="table">
+              <caption>
+                Spis odcinków WTF: co ten frontend
+              </caption>
+              <thead>
+                <tr>
+                  <th>lp</th>
+                  <th>tytuł</th>
+                  <th>czas trwania</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Powitanie</td>
+                  <td>05:45</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Iste quibusdam pariatur libero cumque consequuntur quas qui
+                    expedita soluta nostrum? Ad nesciunt ipsum praesentium sint
+                    incidunt cupiditate animi sapiente perferendis repellat?
+                  </td>
+                  <td>12:45</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </article>
 
-        <article>
-          <h3 class="special-heading">
+        <article class="week-summary">
+          <h3 class="week-summary__title">
             Czy nagrywanie szkolenia to prosta sprawa?
           </h3>
-          <p>
+          <p class="week-summary__description">
             Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja
             naiwny!). Samo planowanie rzeczy zajęło dużo więcej! Na szczęście
             dzięki wsparciu bliskich i sporej motywacji udało mi się wytworzyć
@@ -68,9 +143,10 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       Strona domowa Maćka Korsana, wszystkie treści są efektem tworzenia
-      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
+      szkolenia WTF: Co ten frontend.
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
     <script src="main.js"></script>
   </body>
