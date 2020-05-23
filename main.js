@@ -1,13 +1,6 @@
 const firstName = "Maciek";
 const age = 32;
 
-const heading = document.querySelector(".main__heading--js");
-
-console.log(heading);
-
-heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się ${firstName} i mam ${age} lata.`;
-
-console.log(heading);
 
 const greet = (age, firstName) => {
   console.log(
@@ -114,3 +107,21 @@ if (32 > 20) {
 const result = (humanOne.age > humanTwo.age) ? age : false;
 
 console.log(result)
+
+const button = document.querySelector('.action--js');
+
+console.log(button)
+
+
+button.addEventListener('click', () => {
+  const heading = document.querySelector(".main__heading--js");
+  heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się Maciek`;
+  console.log();
+});
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+  const nav = document.querySelector('.navigation--js');
+  nav.classList.toggle('navigation--open');
+})
